@@ -1,0 +1,342 @@
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>Match Match Game</title>
+  <meta name="description" content="Theme: Match-Match Game. Author: Artsiom Lipin.">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="help-menu">
+    <button id="rules" title="Rules">
+      <i class=" icon icon-help-circled"></i>
+    </button>
+    <button id="score" title="Score">
+      <i class="icon icon-award"></i>
+    </button>
+    <button id="volume" title="Music">
+      <i class="icon icon-sound"></i>
+    </button>
+  </div>
+  <div class="outer-wrapper">
+    <div class="inner-wrapper">
+      <header>
+        <h1>Welcome to the
+          <br> Match-Match Game</h1>
+        <h2>Match-Match Game is a card game in which all of the cards are laid face down on a surface and two cards are flipped
+          face up over each turn. The object of the game is to turn over pairs of matching cards.</h2>
+      </header>
+      <main>
+        <div class="game-choose">
+          <p>Choose your cards:</p>
+          <div class="wrapper">
+            <div class="content-wrap">
+              <div class="flipper">
+                <div class="content-front flip3D-front card-bg">
+                  <h3>Classic</h3>
+                  <img class="bg" src="img/classic/cards/40.jpg" alt="card">
+                </div>
+                <div class="content-back flip3D-back card-bg">
+                  <button class="close">
+                    <i class="icon icon-cancel"></i>
+                  </button>
+                  <h3>Configure the Game:</h3>
+                  <form class="game-pref">
+                    <label>
+                      <i class="icon icon-user"></i>
+                      <input class="user-name" type="text" name="user-name" placeholder="your name">
+                    </label>
+                    <label>
+                      <i class="icon icon-mail"></i>
+                      <input class="user-email" type="email" name="user-email" placeholder="your email">
+                    </label>
+                    <div class="game-back-image">
+                      <h4>Choose back image:</h4>
+                      <label class="back-image-item">
+                        <img src="img/classic/back-images/1.jpg" alt="back image">
+                        <input class="radio-classic" type="radio" name="back-image-classic" checked value="img/classic/back-images/1.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/classic/back-images/2.jpg" alt="back image">
+                        <input class="radio-classic" type="radio" name="back-image-classic" value="img/classic/back-images/2.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/classic/back-images/3.jpg" alt="back image">
+                        <input class="radio-classic" type="radio" name="back-image-classic" value="img/classic/back-images/3.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/classic/back-images/4.jpg" alt="back image">
+                        <input class="radio-classic" type="radio" name="back-image-classic" value="img/classic/back-images/4.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/classic/back-images/5.jpg" alt="back image">
+                        <input class="radio-classic" type="radio" name="back-image-classic" value="img/classic/back-images/5.jpg">
+                      </label>
+                    </div>
+                    <div class="game-diff">
+                      <h4>Choose difficulty:</h4>
+                      <label class="game-diff-item" title="easy">
+                        <i class="icon icon-emo-happy"></i>
+                        <input class="radio-classic-diff" type="radio" name="game-diff-classic" checked value="12">
+                      </label>
+                      <label class="game-diff-item" title="normal">
+                        <i class="icon icon-emo-surprised"></i>
+                        <input class="radio-classic-diff" type="radio" name="game-diff-classic" value="20">
+                      </label>
+                      <label class="game-diff-item" title="hard">
+                        <i class="icon icon-emo-displeased"></i>
+                        <input class="radio-classic-diff" type="radio" name="game-diff-classic" value="32">
+                      </label>
+                      <label class="game-diff-item" title="hell">
+                        <i class="icon icon-emo-devil"></i>
+                        <input class="radio-classic-diff" type="radio" name="game-diff-classic" value="50">
+                      </label>
+                    </div>
+                    <button id="start-classic" class="button start-button" type="button">start</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="content-wrap">
+              <div class="flipper">
+                <div class="content-front flip3D-front card-bg">
+                  <h3>Hearthstone</h3>
+                  <img class="bg" src="img/hearthstone/back-images/2.jpg" alt="card">
+                </div>
+                <div class="content-back flip3D-back card-bg">
+                  <button class="close">
+                    <i class="icon icon-cancel"></i>
+                  </button>
+                  <h3>Configure the Game:</h3>
+                  <form class="game-pref">
+                    <label>
+                      <i class="icon icon-user"></i>
+                      <input class="user-name" type="text" name="user-name" placeholder="your name">
+                    </label>
+                    <label>
+                      <i class="icon icon-mail"></i>
+                      <input class="user-email" type="email" name="user-email" placeholder="your email">
+                    </label>
+                    <div class="game-back-image">
+                      <h4>Choose back image:</h4>
+                      <label class="back-image-item">
+                        <img src="img/hearthstone/back-images/1.jpg" alt="back image">
+                        <input class="radio-hearthstone" type="radio" name="back-image-hearthstone" checked value="img/hearthstone/back-images/1.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/hearthstone/back-images/2.jpg" alt="back image">
+                        <input class="radio-hearthstone" type="radio" name="back-image-hearthstone" value="img/hearthstone/back-images/2.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/hearthstone/back-images/3.jpg" alt="back image">
+                        <input class="radio-hearthstone" type="radio" name="back-image-hearthstone" value="img/hearthstone/back-images/3.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/hearthstone/back-images/4.jpg" alt="back image">
+                        <input class="radio-hearthstone" type="radio" name="back-image-hearthstone" value="img/hearthstone/back-images/4.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/hearthstone/back-images/5.jpg" alt="back image">
+                        <input class="radio-hearthstone" type="radio" name="back-image-hearthstone" value="img/hearthstone/back-images/5.jpg">
+                      </label>
+                    </div>
+                    <div class="game-diff">
+                      <h4>Choose difficulty:</h4>
+                      <label class="game-diff-item" title="easy">
+                        <i class="icon icon-emo-happy"></i>
+                        <input class="radio-hearthstone-diff" type="radio" name="game-diff-hearthstone" checked value="12">
+                      </label>
+                      <label class="game-diff-item" title="normal">
+                        <i class="icon icon-emo-surprised"></i>
+                        <input class="radio-hearthstone-diff" type="radio" name="game-diff-hearthstone" value="20">
+                      </label>
+                      <label class="game-diff-item" title="hard">
+                        <i class="icon icon-emo-displeased"></i>
+                        <input class="radio-hearthstone-diff" type="radio" name="game-diff-hearthstone" value="32">
+                      </label>
+                      <label class="game-diff-item" title="hell">
+                        <i class="icon icon-emo-devil"></i>
+                        <input class="radio-hearthstone-diff" type="radio" name="game-diff-hearthstone" value="50">
+                      </label>
+                    </div>
+                    <button id="start-hearthstone" class="button start-button" type="button">start</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="content-wrap">
+              <div class="flipper">
+                <div class="content-front flip3D-front card-bg">
+                  <h3>Gwent</h3>
+                  <img class="bg" src="img/gwent/back-images/gvint-bg.jpg" alt="card">
+                </div>
+                <div class="content-back flip3D-back card-bg">
+                  <button class="close">
+                    <i class="icon icon-cancel"></i>
+                  </button>
+                  <h3>Configure the Game:</h3>
+                  <form class="game-pref">
+                    <label>
+                      <i class="icon icon-user"></i>
+                      <input class="user-name" type="text" name="user-name" placeholder="your name">
+                    </label>
+                    <label>
+                      <i class="icon icon-mail"></i>
+                      <input class="user-email" type="email" name="user-email" placeholder="your email">
+                    </label>
+                    <div class="game-back-image">
+                      <h4>Choose back image:</h4>
+                      <label class="back-image-item">
+                        <img src="img/gwent/back-images/1.jpg" alt="back image">
+                        <input class="radio-gwent" type="radio" name="back-image-gwent" checked value="img/gwent/back-images/1.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/gwent/back-images/2.jpg" alt="back image">
+                        <input class="radio-gwent" type="radio" name="back-image-gwent" value="img/gwent/back-images/2.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/gwent/back-images/3.jpg" alt="back image">
+                        <input class="radio-gwent" type="radio" name="back-image-gwent" value="img/gwent/back-images/3.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/gwent/back-images/4.jpg" alt="back image">
+                        <input class="radio-gwent" type="radio" name="back-image-gwent" value="img/gwent/back-images/4.jpg">
+                      </label>
+                      <label class="back-image-item">
+                        <img src="img/gwent/back-images/5.jpg" alt="back image">
+                        <input class="radio-gwent" type="radio" name="back-image-gwent" value="img/gwent/back-images/5.jpg">
+                      </label>
+                    </div>
+                    <div class="game-diff">
+                      <h4>Choose difficulty:</h4>
+                      <label class="game-diff-item" title="easy">
+                        <i class="icon icon-emo-happy"></i>
+                        <input class="radio-gwent-diff" type="radio" name="game-diff-gwent" checked value="12">
+                      </label>
+                      <label class="game-diff-item" title="normal">
+                        <i class="icon icon-emo-surprised"></i>
+                        <input class="radio-gwent-diff" type="radio" name="game-diff-gwent" value="20">
+                      </label>
+                      <label class="game-diff-item" title="hard">
+                        <i class="icon icon-emo-displeased"></i>
+                        <input class="radio-gwent-diff" type="radio" name="game-diff-gwent" value="32">
+                      </label>
+                      <label class="game-diff-item" title="hell">
+                        <i class="icon icon-emo-devil"></i>
+                        <input class="radio-gwent-diff" type="radio" name="game-diff-gwent" value="50">
+                      </label>
+                    </div>
+                    <button id="start-gwent" class="button start-button" type="button">start</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>© Author: Artsiom Lipin. Project: Match-Match Game. 2018</p>
+      </footer>
+    </div>
+  </div>
+  <div id="overlay-rules" class="overlay">
+    <div class="popup popup-rules">
+      <button id="popup-rules-close" class="close">
+        <i class="icon icon-cancel"></i>
+      </button>
+      <h2>Rules</h2>
+      <ul>
+        <li>All pictures on a cards are hidden</li>
+        <li>When you select the card she are turn face up</li>
+        <li>Select two cards to try to match the pictures</li>
+        <li>If the pictures match they will remain upside down face up</li>
+        <li>If dont match they are turned face down again</li>
+        <li>The game continues until all the pictures match up</li>
+      </ul>
+    </div>
+  </div>
+  <div id="overlay-score" class="overlay">
+    <div class="popup popup-score">
+      <button id="popup-score-close" class="close">
+        <i class="icon icon-cancel"></i>
+      </button>
+      <h2>Score</h2>
+      <table class="score">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Time</td>
+          </tr>
+        </thead>
+        <tbody class="table">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="overlay-win" class="overlay">
+    <div class="popup popup-win">
+      <button id="popup-win-close" class="close">
+        <i class="icon icon-cancel"></i>
+      </button>
+      <h2>Congratulations!
+        <br>You're win!</h2>
+      <span>Your time:</span>
+      <p class="total-time"></p>
+      <button id="new-game" class="button return-button">New game</button>
+    </div>
+  </div>
+
+  <div class="game-wrapper">
+    <div id="game-container" class="game-container">
+      <div class="game-controls">
+        <div class="timer-wrap">
+          <i class="icon icon-spin6"></i>
+          <i class="icon icon-clock"></i>
+          <div class="timer">
+            <span>0</span> mins
+            <span>0</span> secs</div>
+        </div>
+        <button id="home" class="button return-button">
+          New game
+        </button>
+      </div>
+      <div id="game-board" class="game-board">
+      </div>
+    </div>
+  </div>
+  <script src="js/card.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
